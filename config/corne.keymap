@@ -10,8 +10,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &mt {
-    tapping-term-ms = <300>;
-    flavor = "balanced";
 };
 
 / {
