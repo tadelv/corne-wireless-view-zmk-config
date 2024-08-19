@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &mt {
-    tapping-term-ms = <400>;
+    tapping-term-ms = <600>;
     quick-tap-ms = <200>;
     require-prior-idle-ms = <125>;
 };
