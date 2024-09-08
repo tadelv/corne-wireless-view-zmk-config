@@ -90,10 +90,30 @@
 &kp ESC    &kp Q         &kp W         &kp F        &kp P        &kp B     &kp J   &kp L        &kp U        &kp Y         &kp SEMI      &kp BSPC
 &kp GRAVE  &hrm LSHFT A  &hrm LCTRL R  &hrm LALT S  &hrm LGUI T  &kp G     &kp M   &hrm RGUI N  &hrm RALT E  &hrm LCTRL I  &hrm RSHFT O  &kp SQT
 &kp TAB    &kp Z         &kp X         &kp C        &kp D        &kp V     &kp K   &kp H        &kp COMMA    &kp DOT       &kp FSLH      &trans
-                                       &trans       &lt 1 SPACE  &trans    &trans  &lt 2 RET    &trans
+                                       &trans       &lt 5 SPACE  &trans    &trans  &lt 6 RET    &trans
             >;
 
             label = "colebase";
+        };
+
+        layer_5 {
+            display-name = "Lower";
+            bindings = <
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8     &kp N9     &kp N0    &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp SEMI  &kp APOS
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &kp COMMA  &kp DOT    &kp FSLH  &trans
+                        &to 0   &trans  &trans    &trans    &mo 3     &to 2
+            >;
+        };
+
+        layer_6 {
+            display-name = "Raise";
+            bindings = <
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                          &to 0     &mo 3     &trans       &trans     &trans     &to 3
+            >;
         };
     };
 };
