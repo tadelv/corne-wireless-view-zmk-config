@@ -26,7 +26,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        colebase {
+            bindings = <
+&kp ESC    &kp Q         &kp W         &kp F        &kp P        &kp B         &kp J          &kp L        &kp U        &kp Y         &kp SEMI      &kp BACKSPACE
+&kp GRAVE  &hrm LSHFT A  &hrm LCTRL R  &hrm LALT S  &hrm LGUI T  &kp G         &kp M          &hrm RGUI N  &hrm RALT E  &hrm LCTRL I  &hrm RSHFT O  &kp SQT
+&kp TAB    &kp Z         &kp X         &kp C        &kp D        &kp V         &kp K          &kp H        &kp COMMA    &kp DOT       &kp FSLH      &caps_word
+                                       &to 0        &lt 2 SPACE  &kp DELETE    &kp BACKSPACE  &lt 3 RET    &to 1
+            >;
+
+            label = "colebase";
+        };
+
+        qwerty {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -38,19 +49,8 @@
 &kp ESC    &kp Q              &kp W         &kp E            &kp R            &kp T      &kp Y          &kp U             &kp I        &kp O         &kp P            &kp BSPC
 &kp GRAVE  &hrm LEFT_SHIFT A  &hrm LCTRL S  &hrm LEFT_ALT D  &hrm LEFT_GUI F  &kp G      &kp H          &hrm RIGHT_GUI J  &hrm RALT K  &hrm RCTRL L  &hrm RSHFT SEMI  &kp SQT
 &kp TAB    &kp Z              &kp X         &kp C            &kp V            &kp B      &kp N          &kp M             &kp COMMA    &kp DOT       &kp FSLH         &caps_word
-                                            &to 0            &lt 2 SPACE      &kp DEL    &kp BACKSPACE  &lt 3 RETURN      &to 1
+                                            &to 0            &lt 2 SPACE      &kp DEL    &kp BACKSPACE  &lt 3 RETURN      &to 3
             >;
-        };
-
-        colebase {
-            bindings = <
-&trans  &kp Q         &kp W         &kp F        &kp P        &kp B     &kp J   &kp L        &kp U        &kp Y         &kp SEMI      &trans
-&trans  &hrm LSHFT A  &hrm LCTRL R  &hrm LALT S  &hrm LGUI T  &kp G     &kp M   &hrm RGUI N  &hrm RALT E  &hrm LCTRL I  &hrm RSHFT O  &trans
-&trans  &kp Z         &kp X         &kp C        &kp D        &kp V     &kp K   &kp H        &kp COMMA    &kp DOT       &kp FSLH      &trans
-                                    &trans       &trans       &trans    &trans  &trans       &to 2
-            >;
-
-            label = "colebase";
         };
 
         lower_layer {
@@ -90,7 +90,7 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans   &trans   &out OUT_TOG
 &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans   &trans   &trans
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-                                        &to 0         &trans        &trans          &trans  &trans  &to 1
+                                        &to 0         &trans        &trans          &trans  &trans  &to 3
             >;
 
             label = "Exp";
