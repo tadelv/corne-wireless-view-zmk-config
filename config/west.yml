@@ -2,7 +2,7 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/tadelv
-     - name: m165437 #for the awesome shields
+    - name: m165437 #for the awesome shields
       url-base: https://github.com/M165437
   projects:
     - name: zmk
