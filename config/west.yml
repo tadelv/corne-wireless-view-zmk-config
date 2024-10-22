@@ -1,13 +1,13 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/tadelv
     - name: m165437 #for the awesome shields
       url-base: https://github.com/M165437
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: 2fd9026462311080e339ba132f735fa2f7c95643
       import: app/west.yml
     - name: nice-view-gem #new entry
       remote: m165437 #new entry
