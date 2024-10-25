@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/tadelv
-    - name: m165437 #for the awesome shields
-      url-base: https://github.com/M165437
+    - name: infely                            
+      url-base: https://github.com/infely 
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: 2fd9026462311080e339ba132f735fa2f7c95643
+      revision: main
       import: app/west.yml
-    - name: nice-view-gem #new entry
-      remote: m165437 #new entry
-      revision: main #new entry
+    - name: nice-view-battery                  
+      remote: infely                           
+      revision: main                           
   self:
     path: config
