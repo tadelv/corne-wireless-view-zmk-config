@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/tadelv
+      url-base: https://github.com/zmkfirmware
     - name: infely                            
       url-base: https://github.com/infely 
   projects:
