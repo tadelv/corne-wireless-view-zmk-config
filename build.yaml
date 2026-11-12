@@ -15,6 +15,11 @@
 include:
   - board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
+    # Workaround for zmk-keybeacon v1.2.0: its compat probe finds the legacy
+    # zmk_endpoints_selected() here but drops the resulting compile definition
+    # (upstream add_compile_definitions scope bug), so pass it ourselves.
+    # Drop this line after moving to a ZMK rev with zmk_endpoint_get_selected().
+    cmake-args: -DEXTRA_CFLAGS=-DZMK_KEYBEACON_HAS_LEGACY_ENDPOINT=1
 
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
