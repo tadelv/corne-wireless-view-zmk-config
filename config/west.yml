@@ -2,10 +2,17 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: ykiewang
+      url-base: https://github.com/ykiewang
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
+    # KeyBeacon (KBP 1.2): layer + mods + connectivity + battery over the host BLE
+    # link. Pinned to a release tag; bump only this line to upgrade.
+    - name: zmk-keybeacon
+      remote: ykiewang
+      revision: v1.2.0
   self:
     path: config
